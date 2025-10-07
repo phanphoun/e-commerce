@@ -95,12 +95,14 @@ const HomePage = () => {
             </div>
             <div className="hero-image relative">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-3xl blur-lg opacity-30 animate-pulse"></div>
-                <img
-                  src="https://images.seeklogo.com/logo-png/7/2/img-management-logo-png_seeklogo-70708.png"
-                  alt="Hero"
-                  className="relative w-full h-auto rounded-3xl shadow-2xl border border-white/20 backdrop-blur-sm"
-                />
+                <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-3xl blur-lg opacity-30 animate-pulse">
+                    <img
+                      src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/838564/935880_609691.png"
+                      alt="Hero"
+                      className="relative w-full h-auto rounded-3xl shadow-2xl border border-white/20 backdrop-blur-sm"
+                    />
+                </div>
+                
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
                   <Gift className="h-10 w-10 text-white" />
                 </div>
