@@ -1,4 +1,4 @@
-/* App-specific styles */
+/* App-specific styles
 
 /* ===================== */
 /* BUTTON STYLES         */
@@ -494,4 +494,10 @@
   .product-info {
     padding: var(--spacing-md);
   }
+} 
+
+#product-name,
+#product-price,
+#product-quantity {
+ color: #000;
 }
