@@ -22,11 +22,11 @@ const Header = () => {
       <div className="bg-primary-blue text-white py-2">
         <div className="container">
           <div className="flex justify-between items-center text-sm">
-            <span>Free shipping on orders over $50</span>
+            <span className='text-black' id='free-shipping'>Free shipping on orders over $50</span>
             <div className="hidden md:flex space-x-4">
-              <Link to="/help" className="hover:text-blue-200 transition">Help</Link>
-              <Link to="/track-order" className="hover:text-blue-200 transition">Track Order</Link>
-              <Link to="/contact" className="hover:text-blue-200 transition">Contact</Link>
+              <Link to="/help" className="hover:text-blue-200 transition" id='help'>Help</Link>
+              <Link to="/track-order" className="hover:text-blue-200 transition" id='track-order'>Track Order</Link>
+              <Link to="/contact" className="hover:text-blue-200 transition" id='contact'>Contact</Link>
             </div>
           </div>
         </div>
@@ -77,7 +77,8 @@ const Header = () => {
             
             <Link to="/wishlist" className="p-2 text-gray-700 hover:text-primary-blue transition relative" aria-label="Wishlist">
               <Heart className="h-6 w-6" />
-              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+              
+              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">5</span>
             </Link>
             
             <Link to="/cart" className="p-2 text-gray-700 hover:text-primary-blue transition relative" aria-label="Shopping Cart">
@@ -129,9 +130,9 @@ const Header = () => {
                 </Link>
               ))}
               <div className="md:hidden space-y-2 pt-4 border-t">
-                <Link to="/help" className="block py-2 text-gray-700 hover:text-primary-blue transition">Help</Link>
-                <Link to="/track-order" className="block py-2 text-gray-700 hover:text-primary-blue transition">Track Order</Link>
-                <Link to="/contact" className="block py-2 text-gray-700 hover:text-primary-blue transition">Contact</Link>
+                <Link to="/help" className="block py-2 transition ">Help</Link>
+                <Link to="/track-order" className="block py-2 transition color:primary-blue">Track Order</Link>
+                <Link to="/contact" className="block py-2 transition color:primary-blue">Contact</Link>
               </div>
             </div>
           </nav>

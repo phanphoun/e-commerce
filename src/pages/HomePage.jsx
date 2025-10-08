@@ -13,7 +13,7 @@ const HomePage = () => {
       reviews: 128,
       badge: 'Best Seller',
       badgeColor: 'from-emerald-500 to-teal-600',
-      image: '/api/placeholder/300/300'
+      image: 'https://aideaco.com/cdn/shop/products/81HCQb4zG4L._AC_SL1500_bb0d7431-25fc-4fb7-a1ed-8c8d27fdf689.jpg?v=1655134468'
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const HomePage = () => {
       reviews: 95,
       badge: 'New',
       badgeColor: 'from-blue-500 to-purple-600',
-      image: '/api/placeholder/300/300'
+      image: 'https://cdn.britannica.com/04/123704-050-023DC490/Pair-leather-shoes.jpg'
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const HomePage = () => {
       reviews: 67,
       badge: 'Sale',
       badgeColor: 'from-rose-500 to-pink-600',
-      image: '/api/placeholder/300/300'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8NMas6airf-LE0T9axkQ31viG1ee-DQCKrQ&s'
     },
     {
       id: 4,
@@ -46,27 +46,27 @@ const HomePage = () => {
       reviews: 203,
       badge: 'Popular',
       badgeColor: 'from-amber-500 to-orange-600',
-      image: '/api/placeholder/300/300'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInwp3KwXrDSLlYu5VB6A5wwEG-yblJD_EOw&s'
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 w-full">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 py-20 lg:py-28">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500">
+        {/* <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
         </div>
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-transparent to-black/10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-transparent to-black/10"></div> */}
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="hero-content text-white">
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/20">
-                <Zap className="h-4 w-4 mr-2" />
+        <div className="container">
+          <div className="grid-hero">
+            <div className="" id='text-hero'>
+              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 border border-white/2" id='hero-badge'>
+                <Zap className="h-4 w-4 mr-2 text-white" />
                 New Collection Available
               </div>
-              <h1 className="hero-title text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="hero-title text-5xl lg:text-7xl font-bold mb-6 leading-[1.2] tracking-tight">
                 Discover Amazing
                 <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
                   Products
@@ -76,17 +76,17 @@ const HomePage = () => {
                 Shop the latest trends and find everything you need, from electronics to fashion,
                 all in one convenient place with fast shipping and secure payments.
               </p>
-              <div className="hero-actions flex flex-col sm:flex-row gap-4">
+              <div className="hero-actions flex flex-col sm:flex-row gap-4" id='hero-actions'>
                 <Link
-                  to="/products"
-                  className="group bg-white text-indigo-600 px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center"
+                  to="/products" id='shop-icon'
+                  className="shop-icon"
                 >
                   Shop Now
                   <ShoppingCart className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
-                  to="/about"
-                  className="group border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-semibold text-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300 flex items-center justify-center"
+                  to="/about" id = 'more-icon'
+                  className="more-icon"
                 >
                   Learn More
                   <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -95,17 +95,21 @@ const HomePage = () => {
             </div>
             <div className="hero-image relative">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-3xl blur-lg opacity-30 animate-pulse">
-                    <img
-                      src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/838564/935880_609691.png"
-                      alt="Hero"
-                      className="relative w-full h-auto rounded-3xl shadow-2xl border border-white/20 backdrop-blur-sm"
-                    />
+                <div className="absolute -inset-4 bg-gradient-to-r from-pink-0 to-purple-400 rounded-3xl blur-lg opacity-30 animate-pulse">
+                    
                 </div>
-                
+                <img
+                      src="https://www.honor.com/content/dam/honor/common/product-list/laptops/plp-banner/global/magicbook-x16-2025-pc.png"
+                      alt="Hero"
+                      className="img-hero"
+                    />
+
+
+                {/* gift icon */}
+                {/*                 
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
                   <Gift className="h-10 w-10 text-white" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -169,9 +173,9 @@ const HomePage = () => {
               Featured Collection
             </div>
             <h2 className="section-title text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Handpicked <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Products</span>
+               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Products</span>
             </h2>
-            <p className="section-subtitle text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="section-subtitle text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed" id='product-text'>
               Discover our carefully curated selection of premium products that combine quality, style, and innovation
             </p>
           </div>
@@ -189,9 +193,9 @@ const HomePage = () => {
                     alt={product.name}
                     className="relative w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className={`product-badge absolute top-4 left-4 px-3 py-1.5 text-xs font-bold rounded-full bg-gradient-to-r ${product.badgeColor} text-white shadow-lg`}>
+                  {/* <div className={`product-badge absolute top-4 left-4 px-3 py-1.5 text-xs font-bold rounded-full bg-gradient-to-r ${product.badgeColor} text-white shadow-lg`}>
                     {product.badge}
-                  </div>
+                  </div> */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <button className="p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all duration-300">
                       <Heart className="h-5 w-5 text-gray-700 hover:text-red-500 transition-colors" />

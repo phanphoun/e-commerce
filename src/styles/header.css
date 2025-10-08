@@ -1,0 +1,22 @@
+
+#help {
+    color: #000;
+
+}
+
+#track-order {
+    color: #000;
+}
+
+#contact {
+    color: #000;
+}
+
+#free-shipping {
+    color: #000;
+}
+@media (max-width:379px){
+    #free-shipping{
+        display: none;
+    }
+}

@@ -4,5 +4,8 @@
 
 @import './styles/variables.css';
 @import './styles/global.css';
+@import './styles/header.css';
+@import './styles/home.css';
+@import './styles/productDetails.css'
 
 /* App-specific styles can go here */
